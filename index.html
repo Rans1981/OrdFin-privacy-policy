@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - OrdFin</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            /* Azul OrdFin aproximado */
+            --secondary-color: #03a9f4;
+            /* Azul claro complementario */
+            --text-color: #333333;
+            --bg-color: #f4f6f8;
+            --container-bg: #ffffff;
+            --border-color: #eef2f5;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: var(--container-bg);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        }
+
+        .date {
+            display: block;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 35px;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #000;
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .offline-badge {
+            display: inline-block;
+            background-color: #e3f2fd;
+            color: var(--primary-color);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Política de Privacidad - OrdFin</h1>
+    </div>
+
+    <div class="container">
+        <span class="date">Fecha de entrada en vigor: 19 de Febrero de 2026</span>
+
+        <p>En <strong>OrdFin</strong>, valoramos y respetamos profundamente su privacidad. Esta Política de Privacidad
+            describe cómo manejamos la información cuando utiliza nuestra aplicación móvil.</p>
+
+        <div class="offline-badge">PRIVACIDAD TOTAL GARANTIZADA</div>
+
+        <h2>1. Recopilación y Uso de Datos</h2>
+        <p><strong>OrdFin funciona bajo una arquitectura "Offline-First".</strong></p>
+        <ul>
+            <li><strong>Sin Servidores Externos:</strong> OrdFin <strong>no</strong> transmite, almacena, ni procesa sus
+                datos financieros, personales o de uso en servidores externos propios ni de terceros.</li>
+            <li><strong>Almacenamiento Local:</strong> Todos los datos que ingresa en la aplicación (gastos, ingresos,
+                metas de ahorro, préstamos, tarjetas, nombre de usuario) se almacenan exclusivamente en la base de datos
+                interna de su dispositivo móvil (SQLite).</li>
+            <li><strong>Procesamiento en el Dispositivo:</strong> Todos los cálculos, proyecciones y análisis
+                financieros se realizan localmente en el procesador de su teléfono.</li>
+        </ul>
+
+        <h2>2. Permisos del Dispositivo</h2>
+        <p>La aplicación puede solicitar ciertos permisos para funcionar correctamente:</p>
+        <ul>
+            <li><strong>Almacenamiento / Archivos:</strong> Únicamente para generar y guardar reportes financieros en
+                formato PDF o Excel exportados voluntariamente por el usuario.</li>
+            <li><strong>Notificaciones:</strong> Para enviarle recordatorios locales sobre pagos, metas de ahorro o
+                vencimientos de tarjetas. Estas notificaciones son programadas y gestionadas internamente por el sistema
+                operativo de su dispositivo.</li>
+        </ul>
+
+        <h2>3. Datos Compartidos</h2>
+        <p><strong>Nosotros no compartimos su información.</strong></p>
+        <p>Dado que no recopilamos sus datos, no tenemos capacidad para venderlos, comercializarlos ni transferirlos a
+            terceros. Los datos nunca salen de su dispositivo a menos que usted decida explícitamente exportar un
+            reporte y compartirlo por sus propios medios (correo, mensajería, etc.).</p>
+
+        <h2>4. Analíticas y Rastreo</h2>
+        <p>OrdFin <strong>no</strong> utiliza servicios de análisis de terceros (como Google Analytics, Firebase
+            Analytics, etc.) que rastreen su comportamiento individual dentro de la aplicación con fines publicitarios.
+        </p>
+        <p>Si en el futuro se implementan herramientas de diagnóstico de errores (Crashlytics), estas se configurarán
+            para no enviar información personal identificable (PII) y serán estrictamente para mejorar la estabilidad
+            técnica.</p>
+
+        <h2>5. Seguridad</h2>
+        <p>Almacenamos sus datos utilizando las medidas de seguridad estándar proporcionadas por el sistema operativo de
+            su dispositivo (Android/iOS). Recomendamos proteger su dispositivo con contraseña, PIN o biometría para
+            evitar accesos no autorizados a la aplicación.</p>
+
+        <h2>6. Cambios en esta Política</h2>
+        <p>Podemos actualizar nuestra Política de Privacidad ocasionalmente para reflejar cambios en nuestras prácticas
+            o requisitos legales. Le notificaremos sobre cualquier cambio publicando la nueva Política de Privacidad en
+            esta página.</p>
+
+        <h2>7. Contacto</h2>
+        <p>Si tiene alguna pregunta sobre esta Política de Privacidad, por favor contáctenos a:</p>
+        <ul>
+            <li><strong>Correo Electrónico de Soporte:</strong> <a
+                    href="mailto:software.app.create@gmail.com">software.app.create@gmail.com</a></li>
+            <li><strong>Sitio Web:</strong> [Tu Sitio Web Aquí]</li>
+        </ul>
+
+        <footer>
+            &copy; 2026 OrdFin. Todos los derechos reservados.
+        </footer>
+    </div>
+
+</body>
+
+</html>
